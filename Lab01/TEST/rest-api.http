@@ -1,0 +1,31 @@
+GET https://localhost:7208/Home/Search?q=test&counter=3
+Accept: text/html
+
+<> 2024-02-28T104328.200.txt
+<> 2024-02-28T103859.200.txt
+
+### 
+POST https://localhost:7208/Home/Create
+Accept: text/html
+Content-Type: application/x-www-form-urlencoded
+
+name=Adam&age=22
+
+<> 2024-02-28T104655.200.txt
+
+###
+GET https://localhost:7208/Home/FindBook?id=2
+Accept: application/json
+
+<> 2024-02-28T105851.200.json
+
+###
+POST https://localhost:7208/Home/CreateBook
+Content-Type: application/json
+
+{
+  "title": "New Book",
+  "pages": 222
+}
+
+<> 2024-02-28T110632.200.json
